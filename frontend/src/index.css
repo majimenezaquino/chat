@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-chat {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: end;
+  align-items: flex-end;
+}
+.container-chat .container{
+  width: 400px;
+  height: 500px;
+  border: solid 1px #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 5px;
+  margin: 10px 50px;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .header,.footer{
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px #ccc;
+  background-color: #44a5f5;
+}
+.footer{
+  border-bottom: 0;
+  border-top: solid 1px #ccc;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  margin: 2;
+}
+
+.container-send {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+  .container-send button {
+    border: 0px;
+    padding: 10px 20px;
+    background-color: transparent;
+  }
+
+  ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+  }
+  li {
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+  
+  }
+  li p{
+    display: inline-block;
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .container-message{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    overflow-y: scroll;
+  }
+  small {
+    color: #aaa;
+    font-size: 9px;
+    display: inline-block;
+    padding: 5px;
+  }
+  .header p{
+    padding:0 10px;
+    color: #fff;
+  }
