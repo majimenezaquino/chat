@@ -6,7 +6,12 @@ const app = express()
 const http = require("http").Server(app)
 
 app.use(cors())
-const io = require('socket.io')(http);
+const io = require('socket.io')(http,{
+    cors: {
+      origin: "*",
+      methods: ["GET", "POST"]
+    }
+  });
 const SchemaMEssage = require("./models/SchemaMEssage")
 app.use(express.json());
 database.connect()
